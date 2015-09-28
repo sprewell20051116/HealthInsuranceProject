@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104895821BB8D68C0009C0D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 104895811BB8D68C0009C0D5 /* main.m */; };
+		104895851BB8D68C0009C0D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 104895841BB8D68C0009C0D5 /* AppDelegate.m */; };
+		104895881BB8D68C0009C0D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104895871BB8D68C0009C0D5 /* ViewController.m */; };
+		1048958B1BB8D68C0009C0D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104895891BB8D68C0009C0D5 /* Main.storyboard */; };
+		1048958D1BB8D68C0009C0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1048958C1BB8D68C0009C0D5 /* Assets.xcassets */; };
+		104895901BB8D68C0009C0D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1048958E1BB8D68C0009C0D5 /* LaunchScreen.storyboard */; };
+		1048959B1BB8D68C0009C0D5 /* Health_InsuranceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1048959A1BB8D68C0009C0D5 /* Health_InsuranceTests.m */; };
+		104895A61BB8D68D0009C0D5 /* Health_InsuranceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 104895A51BB8D68D0009C0D5 /* Health_InsuranceUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		104895971BB8D68C0009C0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104895751BB8D68C0009C0D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1048957C1BB8D68C0009C0D5;
+			remoteInfo = Health_Insurance;
+		};
+		104895A21BB8D68D0009C0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104895751BB8D68C0009C0D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1048957C1BB8D68C0009C0D5;
+			remoteInfo = Health_Insurance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1048957D1BB8D68C0009C0D5 /* Health_Insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Health_Insurance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		104895811BB8D68C0009C0D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		104895831BB8D68C0009C0D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		104895841BB8D68C0009C0D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		104895861BB8D68C0009C0D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		104895871BB8D68C0009C0D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1048958A1BB8D68C0009C0D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1048958C1BB8D68C0009C0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1048958F1BB8D68C0009C0D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		104895911BB8D68C0009C0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104895961BB8D68C0009C0D5 /* Health_InsuranceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Health_InsuranceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1048959A1BB8D68C0009C0D5 /* Health_InsuranceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Health_InsuranceTests.m; sourceTree = "<group>"; };
+		1048959C1BB8D68C0009C0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104895A11BB8D68D0009C0D5 /* Health_InsuranceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Health_InsuranceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		104895A51BB8D68D0009C0D5 /* Health_InsuranceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Health_InsuranceUITests.m; sourceTree = "<group>"; };
+		104895A71BB8D68D0009C0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1048957A1BB8D68C0009C0D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104895931BB8D68C0009C0D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1048959E1BB8D68D0009C0D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		104895741BB8D68C0009C0D5 = {
+			isa = PBXGroup;
+			children = (
+				1048957F1BB8D68C0009C0D5 /* Health_Insurance */,
+				104895991BB8D68C0009C0D5 /* Health_InsuranceTests */,
+				104895A41BB8D68D0009C0D5 /* Health_InsuranceUITests */,
+				1048957E1BB8D68C0009C0D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1048957E1BB8D68C0009C0D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1048957D1BB8D68C0009C0D5 /* Health_Insurance.app */,
+				104895961BB8D68C0009C0D5 /* Health_InsuranceTests.xctest */,
+				104895A11BB8D68D0009C0D5 /* Health_InsuranceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1048957F1BB8D68C0009C0D5 /* Health_Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				104895831BB8D68C0009C0D5 /* AppDelegate.h */,
+				104895841BB8D68C0009C0D5 /* AppDelegate.m */,
+				104895861BB8D68C0009C0D5 /* ViewController.h */,
+				104895871BB8D68C0009C0D5 /* ViewController.m */,
+				104895891BB8D68C0009C0D5 /* Main.storyboard */,
+				1048958C1BB8D68C0009C0D5 /* Assets.xcassets */,
+				1048958E1BB8D68C0009C0D5 /* LaunchScreen.storyboard */,
+				104895911BB8D68C0009C0D5 /* Info.plist */,
+				104895801BB8D68C0009C0D5 /* Supporting Files */,
+			);
+			path = Health_Insurance;
+			sourceTree = "<group>";
+		};
+		104895801BB8D68C0009C0D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				104895811BB8D68C0009C0D5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		104895991BB8D68C0009C0D5 /* Health_InsuranceTests */ = {
+			isa = PBXGroup;
+			children = (
+				1048959A1BB8D68C0009C0D5 /* Health_InsuranceTests.m */,
+				1048959C1BB8D68C0009C0D5 /* Info.plist */,
+			);
+			path = Health_InsuranceTests;
+			sourceTree = "<group>";
+		};
+		104895A41BB8D68D0009C0D5 /* Health_InsuranceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				104895A51BB8D68D0009C0D5 /* Health_InsuranceUITests.m */,
+				104895A71BB8D68D0009C0D5 /* Info.plist */,
+			);
+			path = Health_InsuranceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1048957C1BB8D68C0009C0D5 /* Health_Insurance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104895AA1BB8D68D0009C0D5 /* Build configuration list for PBXNativeTarget "Health_Insurance" */;
+			buildPhases = (
+				104895791BB8D68C0009C0D5 /* Sources */,
+				1048957A1BB8D68C0009C0D5 /* Frameworks */,
+				1048957B1BB8D68C0009C0D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Health_Insurance;
+			productName = Health_Insurance;
+			productReference = 1048957D1BB8D68C0009C0D5 /* Health_Insurance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		104895951BB8D68C0009C0D5 /* Health_InsuranceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104895AD1BB8D68D0009C0D5 /* Build configuration list for PBXNativeTarget "Health_InsuranceTests" */;
+			buildPhases = (
+				104895921BB8D68C0009C0D5 /* Sources */,
+				104895931BB8D68C0009C0D5 /* Frameworks */,
+				104895941BB8D68C0009C0D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104895981BB8D68C0009C0D5 /* PBXTargetDependency */,
+			);
+			name = Health_InsuranceTests;
+			productName = Health_InsuranceTests;
+			productReference = 104895961BB8D68C0009C0D5 /* Health_InsuranceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		104895A01BB8D68D0009C0D5 /* Health_InsuranceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104895B01BB8D68D0009C0D5 /* Build configuration list for PBXNativeTarget "Health_InsuranceUITests" */;
+			buildPhases = (
+				1048959D1BB8D68D0009C0D5 /* Sources */,
+				1048959E1BB8D68D0009C0D5 /* Frameworks */,
+				1048959F1BB8D68D0009C0D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104895A31BB8D68D0009C0D5 /* PBXTargetDependency */,
+			);
+			name = Health_InsuranceUITests;
+			productName = Health_InsuranceUITests;
+			productReference = 104895A11BB8D68D0009C0D5 /* Health_InsuranceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104895751BB8D68C0009C0D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = GIGIGUN;
+				TargetAttributes = {
+					1048957C1BB8D68C0009C0D5 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					104895951BB8D68C0009C0D5 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1048957C1BB8D68C0009C0D5;
+					};
+					104895A01BB8D68D0009C0D5 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1048957C1BB8D68C0009C0D5;
+					};
+				};
+			};
+			buildConfigurationList = 104895781BB8D68C0009C0D5 /* Build configuration list for PBXProject "Health_Insurance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 104895741BB8D68C0009C0D5;
+			productRefGroup = 1048957E1BB8D68C0009C0D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1048957C1BB8D68C0009C0D5 /* Health_Insurance */,
+				104895951BB8D68C0009C0D5 /* Health_InsuranceTests */,
+				104895A01BB8D68D0009C0D5 /* Health_InsuranceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1048957B1BB8D68C0009C0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104895901BB8D68C0009C0D5 /* LaunchScreen.storyboard in Resources */,
+				1048958D1BB8D68C0009C0D5 /* Assets.xcassets in Resources */,
+				1048958B1BB8D68C0009C0D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104895941BB8D68C0009C0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1048959F1BB8D68D0009C0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		104895791BB8D68C0009C0D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104895881BB8D68C0009C0D5 /* ViewController.m in Sources */,
+				104895851BB8D68C0009C0D5 /* AppDelegate.m in Sources */,
+				104895821BB8D68C0009C0D5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104895921BB8D68C0009C0D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1048959B1BB8D68C0009C0D5 /* Health_InsuranceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1048959D1BB8D68D0009C0D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104895A61BB8D68D0009C0D5 /* Health_InsuranceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		104895981BB8D68C0009C0D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1048957C1BB8D68C0009C0D5 /* Health_Insurance */;
+			targetProxy = 104895971BB8D68C0009C0D5 /* PBXContainerItemProxy */;
+		};
+		104895A31BB8D68D0009C0D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1048957C1BB8D68C0009C0D5 /* Health_Insurance */;
+			targetProxy = 104895A21BB8D68D0009C0D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		104895891BB8D68C0009C0D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1048958A1BB8D68C0009C0D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1048958E1BB8D68C0009C0D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1048958F1BB8D68C0009C0D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		104895A81BB8D68D0009C0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		104895A91BB8D68D0009C0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		104895AB1BB8D68D0009C0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Health_Insurance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-Insurance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		104895AC1BB8D68D0009C0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Health_Insurance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-Insurance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		104895AE1BB8D68D0009C0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Health_InsuranceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-InsuranceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health_Insurance.app/Health_Insurance";
+			};
+			name = Debug;
+		};
+		104895AF1BB8D68D0009C0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Health_InsuranceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-InsuranceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health_Insurance.app/Health_Insurance";
+			};
+			name = Release;
+		};
+		104895B11BB8D68D0009C0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Health_InsuranceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-InsuranceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Health_Insurance;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		104895B21BB8D68D0009C0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Health_InsuranceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-InsuranceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Health_Insurance;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		104895781BB8D68C0009C0D5 /* Build configuration list for PBXProject "Health_Insurance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104895A81BB8D68D0009C0D5 /* Debug */,
+				104895A91BB8D68D0009C0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104895AA1BB8D68D0009C0D5 /* Build configuration list for PBXNativeTarget "Health_Insurance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104895AB1BB8D68D0009C0D5 /* Debug */,
+				104895AC1BB8D68D0009C0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104895AD1BB8D68D0009C0D5 /* Build configuration list for PBXNativeTarget "Health_InsuranceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104895AE1BB8D68D0009C0D5 /* Debug */,
+				104895AF1BB8D68D0009C0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104895B01BB8D68D0009C0D5 /* Build configuration list for PBXNativeTarget "Health_InsuranceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104895B11BB8D68D0009C0D5 /* Debug */,
+				104895B21BB8D68D0009C0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 104895751BB8D68C0009C0D5 /* Project object */;
+}
