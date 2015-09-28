@@ -18,6 +18,7 @@
 		105F6E941BB9469700B521BC /* HIData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 105F6E931BB9469700B521BC /* HIData.plist */; settings = {ASSET_TAGS = (); }; };
 		105F6E981BB946E700B521BC /* PlistUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 105F6E971BB946E700B521BC /* PlistUtilities.m */; settings = {ASSET_TAGS = (); }; };
 		105F6E9B1BB95C1C00B521BC /* HITutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 105F6E9A1BB95C1C00B521BC /* HITutorialViewController.m */; settings = {ASSET_TAGS = (); }; };
+		105F6E9F1BB9B0FA00B521BC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105F6E9E1BB9B0FA00B521BC /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		105F6E971BB946E700B521BC /* PlistUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistUtilities.m; sourceTree = "<group>"; };
 		105F6E991BB95C1C00B521BC /* HITutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HITutorialViewController.h; sourceTree = "<group>"; };
 		105F6E9A1BB95C1C00B521BC /* HITutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HITutorialViewController.m; sourceTree = "<group>"; };
+		105F6E9D1BB9B0FA00B521BC /* Health_Insurance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Health_Insurance.entitlements; sourceTree = "<group>"; };
+		105F6E9E1BB9B0FA00B521BC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105F6E9F1BB9B0FA00B521BC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +93,7 @@
 		104895741BB8D68C0009C0D5 = {
 			isa = PBXGroup;
 			children = (
+				105F6E9E1BB9B0FA00B521BC /* HealthKit.framework */,
 				1048957F1BB8D68C0009C0D5 /* Health_Insurance */,
 				104895991BB8D68C0009C0D5 /* Health_InsuranceTests */,
 				104895A41BB8D68D0009C0D5 /* Health_InsuranceUITests */,
@@ -109,19 +114,19 @@
 		1048957F1BB8D68C0009C0D5 /* Health_Insurance */ = {
 			isa = PBXGroup;
 			children = (
+				105F6E9D1BB9B0FA00B521BC /* Health_Insurance.entitlements */,
 				105F6E951BB946B400B521BC /* Utitlity */,
+				105F6E9C1BB98C2900B521BC /* TutorialView */,
+				104895891BB8D68C0009C0D5 /* Main.storyboard */,
 				104895831BB8D68C0009C0D5 /* AppDelegate.h */,
 				104895841BB8D68C0009C0D5 /* AppDelegate.m */,
-				104895891BB8D68C0009C0D5 /* Main.storyboard */,
 				1048958C1BB8D68C0009C0D5 /* Assets.xcassets */,
 				1048958E1BB8D68C0009C0D5 /* LaunchScreen.storyboard */,
 				104895911BB8D68C0009C0D5 /* Info.plist */,
-				104895801BB8D68C0009C0D5 /* Supporting Files */,
 				105F6E901BB9462E00B521BC /* HIMainViewController.h */,
 				105F6E911BB9462E00B521BC /* HIMainViewController.m */,
 				105F6E931BB9469700B521BC /* HIData.plist */,
-				105F6E991BB95C1C00B521BC /* HITutorialViewController.h */,
-				105F6E9A1BB95C1C00B521BC /* HITutorialViewController.m */,
+				104895801BB8D68C0009C0D5 /* Supporting Files */,
 			);
 			path = Health_Insurance;
 			sourceTree = "<group>";
@@ -159,6 +164,15 @@
 				105F6E971BB946E700B521BC /* PlistUtilities.m */,
 			);
 			name = Utitlity;
+			sourceTree = "<group>";
+		};
+		105F6E9C1BB98C2900B521BC /* TutorialView */ = {
+			isa = PBXGroup;
+			children = (
+				105F6E991BB95C1C00B521BC /* HITutorialViewController.h */,
+				105F6E9A1BB95C1C00B521BC /* HITutorialViewController.m */,
+			);
+			name = TutorialView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +242,12 @@
 				TargetAttributes = {
 					1048957C1BB8D68C0009C0D5 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 97365M2U5B;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					104895951BB8D68C0009C0D5 = {
 						CreatedOnToolsVersion = 7.0;
@@ -435,11 +455,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Health_Insurance/Health_Insurance.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Health_Insurance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-Insurance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -447,11 +471,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Health_Insurance/Health_Insurance.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Health_Insurance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.GIGIGUN.Health-Insurance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

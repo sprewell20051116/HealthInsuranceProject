@@ -7,6 +7,8 @@
 //
 
 #import "HITutorialViewController.h"
+#import "PlistUtilities.h"
+#import <HealthKit/HealthKit.h>
 #define PagesInTutor 3
 
 @interface HITutorialViewController ()
@@ -51,7 +53,9 @@
     _View2TailingConstraint.constant = ViewWidth - 12.5f;
     _View3LeadingConstraint.constant = ViewWidth * (PagesInTutor - 1);
     
+    [self GetHealthInfoFromHealthKit];
     
+    [self init_UserInfoPage];
     [self SetTutor3_PageElement];
 }
 
@@ -60,10 +64,64 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) GetHealthInfoFromHealthKit
+{
+    if(NSClassFromString(@"HKHealthStore") && [HKHealthStore isHealthDataAvailable])
+    {
+        // Add your HealthKit code here
+        HKHealthStore *healthStore = [[HKHealthStore alloc] init];
+        
+        // Share body mass, height and body mass index
+        NSSet *shareObjectTypes = [NSSet setWithObjects:
+                                   [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass],
+                                   [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeight],
+                                   [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMassIndex],
+                                   nil];
+        
+        // Read date of birth, biological sex and step count
+        NSSet *readObjectTypes  = [NSSet setWithObjects:
+                                   [HKObjectType characteristicTypeForIdentifier:HKCharacteristicTypeIdentifierDateOfBirth],
+                                   [HKObjectType characteristicTypeForIdentifier:HKCharacteristicTypeIdentifierBiologicalSex],
+                                   [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount],
+                                   nil];
+        
+        // Request access
+        [healthStore requestAuthorizationToShareTypes:shareObjectTypes
+                                            readTypes:readObjectTypes
+                                           completion:^(BOOL success, NSError *error) {
+                                               
+                                               if(success == YES)
+                                               {
+                                                   NSLog(@"Request HealthKit");
+                                               }
+                                               else
+                                               {
+                                                   // Determine if it was an error or if the
+                                                   // user just canceld the authorization request
+                                               }
+                                               
+                                           }];
+    }
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //    NSLog(@"scroll location = %f", scrollView.contentOffset.x);
+    if (scrollView.contentOffset.x >= 200.0f) {
+        [_Tutor2_AccountGenderImgView setHidden:NO];
+    } else {
+        [_Tutor2_AccountGenderImgView setHidden:YES];
+    }
 }
+
+-(void) init_UserInfoPage
+{
+    CGRect Frame = _Tutor2_AccountImgView.frame;
+    //[_Tutor2_AccountImgView.layer setBorderWidth:8.0f];
+    [_Tutor2_AccountImgView.layer setCornerRadius:Frame.size.width/2];
+    [_Tutor2_AccountImgView.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    [_Tutor2_AccountGenderImgView setHidden:YES];
+}
+
 
 -(void) SetTutor3_PageElement
 {
@@ -74,6 +132,14 @@
     [_Tutor3_EnterAppBtn.layer setBorderWidth:1.0f];
     [_Tutor3_EnterAppBtn.layer setCornerRadius:5.0f];
     [_Tutor3_EnterAppBtn.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+}
+
+
+
+- (IBAction)Tutor3_EnterAppClicked:(UIButton *)sender {
+    // TODO: Open tutorial Seen
+    //[PlistUtilities Plist_SettingTutorialSeen];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
