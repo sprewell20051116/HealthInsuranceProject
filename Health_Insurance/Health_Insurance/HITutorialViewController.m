@@ -1,16 +1,15 @@
 //
-//  ViewController.m
+//  HITutorialViewController.m
+//  Health_Insurance
 //
-//
-//  Created by GIGIGUN on 2015/9/27.
+//  Created by GIGIGUN on 2015/9/28.
 //  Copyright © 2015年 GIGIGUN. All rights reserved.
 //
 
-#import "ViewController.h"
-
+#import "HITutorialViewController.h"
 #define PagesInTutor 3
 
-@interface ViewController ()
+@interface HITutorialViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *TutorScrollerView;
 
 @property (strong, nonatomic) IBOutlet UIView *View1;
@@ -36,11 +35,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *Tutor3_ClickToLearnMoreBtn;
 @property (strong, nonatomic) IBOutlet UILabel *Tutor3_IntroLab;
 @property (strong, nonatomic) IBOutlet UIButton *Tutor3_EnterAppBtn;
-
-
 @end
 
-@implementation ViewController
+@implementation HITutorialViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,10 +46,10 @@
     
     
     // TODO: Get Tutor Page Numbers
-    _View1TailingConstraint.constant += (ViewWidth * (PagesInTutor - 1));
+    _View1TailingConstraint.constant += (ViewWidth * (PagesInTutor - 1) );
     _View2LeadingConstraint.constant = ViewWidth + 12.5f;
     _View2TailingConstraint.constant = ViewWidth - 12.5f;
-    _View3LeadingConstraint.constant = ViewWidth * (PagesInTutor - 1) + 5;
+    _View3LeadingConstraint.constant = ViewWidth * (PagesInTutor - 1);
     
     
     [self SetTutor3_PageElement];
@@ -65,17 +62,18 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-//    NSLog(@"scroll location = %f", scrollView.contentOffset.x);
+    //    NSLog(@"scroll location = %f", scrollView.contentOffset.x);
 }
 
 -(void) SetTutor3_PageElement
 {
     [_Tutor3_ImportHIInfoBtn.layer setBorderWidth:1.0f];
+    [_Tutor3_ImportHIInfoBtn.layer setCornerRadius:5.0f];
     [_Tutor3_ImportHIInfoBtn.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     
     [_Tutor3_EnterAppBtn.layer setBorderWidth:1.0f];
+    [_Tutor3_EnterAppBtn.layer setCornerRadius:5.0f];
     [_Tutor3_EnterAppBtn.layer setBorderColor:[[UIColor whiteColor] CGColor]];
 }
-
 
 @end
