@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1039F2FC1BBA34E900B0FE6C /* HIHealthKitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1039F2FB1BBA34E900B0FE6C /* HIHealthKitModel.m */; settings = {ASSET_TAGS = (); }; };
 		104895821BB8D68C0009C0D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 104895811BB8D68C0009C0D5 /* main.m */; };
 		104895851BB8D68C0009C0D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 104895841BB8D68C0009C0D5 /* AppDelegate.m */; };
 		1048958B1BB8D68C0009C0D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104895891BB8D68C0009C0D5 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1039F2FA1BBA34E900B0FE6C /* HIHealthKitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIHealthKitModel.h; sourceTree = "<group>"; };
+		1039F2FB1BBA34E900B0FE6C /* HIHealthKitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIHealthKitModel.m; sourceTree = "<group>"; };
 		1048957D1BB8D68C0009C0D5 /* Health_Insurance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Health_Insurance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		104895811BB8D68C0009C0D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		104895831BB8D68C0009C0D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1039F2F91BBA34C100B0FE6C /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				1039F2FA1BBA34E900B0FE6C /* HIHealthKitModel.h */,
+				1039F2FB1BBA34E900B0FE6C /* HIHealthKitModel.m */,
+			);
+			name = HealthKit;
+			sourceTree = "<group>";
+		};
 		104895741BB8D68C0009C0D5 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,7 @@
 		1048957F1BB8D68C0009C0D5 /* Health_Insurance */ = {
 			isa = PBXGroup;
 			children = (
+				1039F2F91BBA34C100B0FE6C /* HealthKit */,
 				105F6E9D1BB9B0FA00B521BC /* Health_Insurance.entitlements */,
 				105F6E951BB946B400B521BC /* Utitlity */,
 				105F6E9C1BB98C2900B521BC /* TutorialView */,
@@ -313,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				105F6E9B1BB95C1C00B521BC /* HITutorialViewController.m in Sources */,
+				1039F2FC1BBA34E900B0FE6C /* HIHealthKitModel.m in Sources */,
 				104895851BB8D68C0009C0D5 /* AppDelegate.m in Sources */,
 				105F6E981BB946E700B521BC /* PlistUtilities.m in Sources */,
 				105F6E921BB9462E00B521BC /* HIMainViewController.m in Sources */,
